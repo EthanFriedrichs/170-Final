@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block body %}
+    <div style="min-height: 75vh; display:flex; align-items:center">
+        <div class="container-fluid py-5 text-center">
+            <form action="/register" method="post">
+                <div class="mb-3">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text">
+                    <br>
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="first" placeholder="First Name" type="text">
+                    <br>
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="last" placeholder="Last Name" type="text">
+                    <br>
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="ssn" placeholder="Ex. 123-45-6789" type="text">
+                    <br>
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="address" placeholder="Address" type="text">
+                    <br>
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="phone" placeholder="717-123-4567" type="text">
+                    <br>
+                    <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+                    <br>
+                    <input class="form-control mx-auto w-auto" id="passwordConfirm" name="confirmation" placeholder="Confirm Password" type="password">
+                
+                </div>
+                <button class="btn btn-primary" type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

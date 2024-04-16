@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My Account
+{% endblock %}
+
+{% block body %}
+    <div style="display:flex; justify-content: center; margin-top:70px;">
+        <div class = "balancediv">
+            <h1>Your information:</h1>
+            <h2>Bank Acct Number: {{bank_acct_numb[0][0]}}</h2>
+            <h2>Username: {{user[0][0]}}</h2>
+            <h2>First Name: {{user[0][1]}}</h2>
+            <h2>Last Name: {{user[0][2]}}</h2>
+            <h2>SSN: {{user[0][3]}}</h2>
+            <h2>Address: {{user[0][4]}}</h2>
+            <h2>Phone #: {{user[0][5]}}</h2>
+            <div style="display:flex; justify-content: center;">
+                <div>
+                    <h2 class = "balance">Balance: ${{bank_acct_numb[0][2]}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

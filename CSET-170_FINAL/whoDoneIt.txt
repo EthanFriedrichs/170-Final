@@ -1,0 +1,10 @@
+Monday:
+    Brennan: Added apology and login required functions with required imports. Reworked register function to work with the new database
+    Brennan2: Added the approve.html page and approve features. Updated the layout html. Prevent users from logging in before account is approved
+    Ethan: Added both database tables for the user information and bank number. Reworked connection string and login function to work with our new database.
+    Ethan2: Added my_account page and made it display the proper user data. Made deposit page deposit funds into the user's account.
+    Ethan3: Send funds page now sends funds to the bank number specified.
+
+Tuesday:
+    Brennan: Prevented users from accessing admin pages and admins from accessing user pages.
+    Ethan: Added CSS and reworked add fund and send fund pages to make them look better. Spent most my time sorting out mason's group issue (it works now).

@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Send Funds
+{% endblock %}
+
+{% block body %}
+    <div style="min-height: 75vh; display:flex; align-items:center">
+        <div class="container-fluid py-5 text-center">
+            <h1>Send funds to who?</h1>
+            <form action="/sendfunds" method="post">
+                <div class="mb-3">
+                    <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="recipient" name="recipient" placeholder="Recipient's Bank Number" type="text" required>
+                </div>
+                <div class="mb-3">
+                    <input class="form-control mx-auto w-auto" id="amount" name="amount" placeholder="Amount to send" type="text" required>
+                </div>
+                <button class="btn btn-primary" type="submit">Send Funds</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
